@@ -30,32 +30,32 @@ while playagain == 'y':
     if playerHand == 'rock' and randHand == 'paper':
         print('Computer wins with paper over rock :,(')
         computerScore = computerScore + 1
-        playagain = input('Playagain? y/n ==> ')
+        playagain = input('Playagain? y/n (Default yes) ==> ') or 'y'
 
     elif playerHand == 'rock' and randHand == 'scissors':
         print('Player wins with rock against scissors :D')
         playerScore = playerScore + 1
-        playagain = input('Playagain? y/n ==> ')
+        playagain = input('Playagain? y/n (Default yes) ==> ') or 'y'
 
     elif playerHand == 'paper' and randHand == 'scissors':
         print('Computer wins with scissors against paper :,(')
         computerScore = computerScore + 1
-        playagain = input('Playagain? y/n ==> ')
+        playagain = input('Playagain? y/n (Default yes) ==> ') or 'y'
 
     elif playerHand == 'paper' and randHand == 'rock':
         print('Player wins with paper against rock :D')
         playerScore = playerScore + 1
-        playagain = input('Playagain? y/n ==> ')
+        playagain = input('Playagain? y/n (Default yes) ==> ') or 'y'
 
     elif playerHand == 'scissors' and randHand == 'rock':
         print('Computer wins with rock against scissors :,(')
         computerScore = computerScore + 1
-        playagain = input('Playagain? y/n ==> ')
+        playagain = input('Playagain? y/n (Default yes) ==> ') or 'y'
 
     elif playerHand == 'scissors' and randHand == 'paper':
         print('Player wins with scissors against paper :D')
         playerScore = playerScore + 1
-        playagain = input('Playagain? y/n ==> ')
+        playagain = input('Playagain? y/n (Default yes) ==> ') or 'y'
 
     else:
         print('Same hands, choose again...')
