@@ -22,8 +22,37 @@ while playagain == 'y':
     else:
         pass
 
-    print('player hand : ', playerHand, ' vs computer ', randHand)
 
-    playagain = input('Playagain? y/n ==> ')
+    print('player hand : ', playerHand, ' vs computer ', randHand)
+    # compare hands and declare winner
+    if playerHand == 'rock' and randHand == 'paper':
+        print('Computer wins with paper over rock')
+        playagain = input('Playagain? y/n ==> ')
+
+    elif playerHand == 'rock' and randHand == 'scissors':
+        print('Player wins with rock against scissors')
+        playagain = input('Playagain? y/n ==> ')
+
+    elif playerHand == 'paper' and randHand == 'scissors':
+        print('Computer wins with scissors against paper')
+        playagain = input('Playagain? y/n ==> ')
+
+    elif playerHand == 'paper' and randHand == 'rock':
+        print('Player wins with paper against rock')
+        playagain = input('Playagain? y/n ==> ')
+
+    elif playerHand == 'scissors' and randHand == 'rock':
+        print('Computer wins with rock against scissors')
+        playagain = input('Playagain? y/n ==> ')
+
+    elif playerHand == 'scissors' and randHand == 'paper':
+        print('Player wins with scissors against paper')
+        playagain = input('Playagain? y/n ==> ')
+
+    else:
+        print('Same hands, choose again...')
+        playagain = 'y'
+
+    
 else:
     print('goodbye')
